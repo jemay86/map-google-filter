@@ -1,0 +1,5 @@
+<markers>
+	<marker id="1" name="Pippo" address="Viale topolinia, 26 Zona industriale 1° Fase, 97100 Ragusa RG" lat="36.723680" lng="14.692420" type="pickupSale"/>
+	<marker id="2" name="PAPERINO" address="Località soldoni, 73, 11020 Saint Christophe AO" lat="45.738940" lng="7.350060" type="pickupAssistance"/>
+	<marker id="3" name="PLUTO" address="Via bassotti, 16, 58011 La Torba, Capalbio GR" lat="42.414730" lng="11.327310" type="replacement"/>
+</markers>

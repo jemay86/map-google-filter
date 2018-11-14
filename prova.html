@@ -1,0 +1,44 @@
+<!DOCTYPE html >
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Using MySQL and PHP with Google Maps</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+        
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=API_KEY=initMap">
+    </script>
+    <script type="text/javascript" src="./map.js"></script>
+  </head>
+
+  <body>
+    <div id="type" style="padding:20px">
+      <input type="checkbox" id="pickupSale" style="margin-right:10px" value="pickupSale" onclick="refreshMap()" checked>Filtro1<br>
+      <input type="checkbox" id="pickupAssistance" style="margin-right:10px" value="pickupAssistance" onclick="refreshMap()" checked>Filtro3<br>
+      <input type="checkbox" id="replacement" style="margin-right:10px" value="replacement" onclick="refreshMap()" checked>Filtro3<br> 
+    </div>
+
+    <div id="search" style="padding:20px">
+      <input type="text" id="search-input" name="SearchBox" onKeyDown="if(event.keyCode==13) search();" placeholder="Cerca">
+      <button onclick="search()">Ricerca</button>
+      <button onclick="geolocation()">Geolocalizza</button>
+    </div>
+
+    <div id="map" style="height: 700px"></div>
+
+    <ul id="locator-list" style="padding:20px">
+    </ul> 
+  </body>
+</html>
