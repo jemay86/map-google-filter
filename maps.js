@@ -31,7 +31,7 @@ var customLabel = {
       var input = document.getElementById('search-input');
 
       // Change this depending on the name of your PHP or XML file
-      downloadUrl('./markers.xml', function(data){
+      downloadUrl('https://github.com/jemay86/map-google-filter/blob/master/markers.xml', function(data){
         all_data = data
         refreshMap()
       });
